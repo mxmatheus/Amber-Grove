@@ -23,6 +23,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.STRIPPED_KEHRIBAR_LOG, "Stripped Kehribar Log");
         translationBuilder.add(ModBlocks.KEHRIBAR_WOOD, "Kehribar Wood");
         translationBuilder.add(ModBlocks.STRIPPED_KEHRIBAR_WOOD, "Stripped Kehribar Wood");
+        translationBuilder.add(ModBlocks.KEHRIBAR_LEAVES, "Kehribar Leaves");
+        translationBuilder.add(ModBlocks.ALTIN_LEAVES, "Golden Leaves");
+        translationBuilder.add(ModBlocks.KIZIL_LEAVES, "Crimson Leaves");
         translationBuilder.add(ModBlocks.KEHRIBAR_PLANKS, "Kehribar Planks");
         translationBuilder.add(ModBlocks.KEHRIBAR_STAIRS, "Kehribar Stairs");
         translationBuilder.add(ModBlocks.KEHRIBAR_SLAB, "Kehribar Slab");

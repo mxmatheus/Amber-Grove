@@ -22,6 +22,9 @@ import net.minecraft.world.level.block.WallHangingSignBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.level.block.UntintedParticleLeavesBlock;
+
 public class ModBlocks {
 
     private static BlockBehaviour.Properties props(String name, Block base) {
@@ -75,6 +78,15 @@ public class ModBlocks {
 
     public static final Block KEHRIBAR_HANGING_SIGN = registerBlockWithoutItem("kehribar_hanging_sign",
             new CeilingHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_hanging_sign", Blocks.OAK_HANGING_SIGN)));
+
+    public static final Block KEHRIBAR_LEAVES = registerBlock("kehribar_leaves",
+            new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("kehribar_leaves", Blocks.OAK_LEAVES)));
+
+    public static final Block ALTIN_LEAVES = registerBlock("altin_leaves",
+            new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("altin_leaves", Blocks.OAK_LEAVES)));
+
+    public static final Block KIZIL_LEAVES = registerBlock("kizil_leaves",
+            new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("kizil_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block KEHRIBAR_WALL_HANGING_SIGN = registerBlockWithoutItem("kehribar_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_wall_hanging_sign", Blocks.OAK_WALL_HANGING_SIGN)));

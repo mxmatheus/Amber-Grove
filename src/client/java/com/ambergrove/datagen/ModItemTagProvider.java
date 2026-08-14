@@ -35,5 +35,10 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ItemTags.HANGING_SIGNS)
                 .add(ModItems.KEHRIBAR_HANGING_SIGN.builtInRegistryHolder().key());
+
+        tag(ItemTags.LEAVES)
+                .add(ModBlocks.KEHRIBAR_LEAVES.asItem().builtInRegistryHolder().key())
+                .add(ModBlocks.ALTIN_LEAVES.asItem().builtInRegistryHolder().key())
+                .add(ModBlocks.KIZIL_LEAVES.asItem().builtInRegistryHolder().key());
     }
 }

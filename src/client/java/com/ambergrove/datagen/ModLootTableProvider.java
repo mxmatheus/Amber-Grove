@@ -30,6 +30,10 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.KEHRIBAR_PRESSURE_PLATE);
         dropSelf(ModBlocks.KEHRIBAR_BUTTON);
 
+        add(ModBlocks.KEHRIBAR_LEAVES, block -> createLeavesDrops(block, ModBlocks.KEHRIBAR_LEAVES, NORMAL_LEAVES_SAPLING_CHANCES));
+        add(ModBlocks.ALTIN_LEAVES, block -> createLeavesDrops(block, ModBlocks.ALTIN_LEAVES, NORMAL_LEAVES_SAPLING_CHANCES));
+        add(ModBlocks.KIZIL_LEAVES, block -> createLeavesDrops(block, ModBlocks.KIZIL_LEAVES, NORMAL_LEAVES_SAPLING_CHANCES));
+
         add(ModBlocks.KEHRIBAR_SIGN, block -> createSingleItemTable(ModItems.KEHRIBAR_SIGN));
         add(ModBlocks.KEHRIBAR_WALL_SIGN, block -> createSingleItemTable(ModItems.KEHRIBAR_SIGN));
         add(ModBlocks.KEHRIBAR_HANGING_SIGN, block -> createSingleItemTable(ModItems.KEHRIBAR_HANGING_SIGN));

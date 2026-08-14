@@ -79,5 +79,15 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.WALL_HANGING_SIGNS)
                 .add(ModBlocks.KEHRIBAR_WALL_HANGING_SIGN.builtInRegistryHolder().key());
+
+        tag(BlockTags.LEAVES)
+                .add(ModBlocks.KEHRIBAR_LEAVES.builtInRegistryHolder().key())
+                .add(ModBlocks.ALTIN_LEAVES.builtInRegistryHolder().key())
+                .add(ModBlocks.KIZIL_LEAVES.builtInRegistryHolder().key());
+
+        tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ModBlocks.KEHRIBAR_LEAVES.builtInRegistryHolder().key())
+                .add(ModBlocks.ALTIN_LEAVES.builtInRegistryHolder().key())
+                .add(ModBlocks.KIZIL_LEAVES.builtInRegistryHolder().key());
     }
 }

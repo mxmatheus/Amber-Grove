@@ -1,8 +1,10 @@
 // 26.2	-999999999-01-01T00:00:00	Ambergrove/Tags for minecraft:block
 41b51f74e90f40d21f3d9803febc94806e5ad297 data/minecraft/tags/block/ceiling_hanging_signs.json
 49eb8e056a7853b808fa1262592762547f58cb75 data/minecraft/tags/block/fence_gates.json
+6186ab181e95afe3b392d0b39c5409df714293da data/minecraft/tags/block/leaves.json
 45f658e72a20f0d88c67f05c633e31b77f4ab26d data/minecraft/tags/block/logs.json
 913bda8157975fbde09f942a02778ef4c05fe5d3 data/minecraft/tags/block/mineable/axe.json
+6186ab181e95afe3b392d0b39c5409df714293da data/minecraft/tags/block/mineable/hoe.json
 f855d42f880906c9c6b20bcf0477affbbdf66831 data/minecraft/tags/block/planks.json
 4512144e699c9e3054a3cbe1c7df5ee06f381aef data/minecraft/tags/block/standing_signs.json
 2e0cda88007c7733cee043802a60545977e2b39b data/minecraft/tags/block/wall_hanging_signs.json

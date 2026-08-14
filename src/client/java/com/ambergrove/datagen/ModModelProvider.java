@@ -42,6 +42,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createParticleOnlyBlock(ModBlocks.KEHRIBAR_WALL_SIGN, ModBlocks.KEHRIBAR_PLANKS);
         blockStateModelGenerator.createParticleOnlyBlock(ModBlocks.KEHRIBAR_HANGING_SIGN, ModBlocks.STRIPPED_KEHRIBAR_LOG);
         blockStateModelGenerator.createParticleOnlyBlock(ModBlocks.KEHRIBAR_WALL_HANGING_SIGN, ModBlocks.STRIPPED_KEHRIBAR_LOG);
+
+        blockStateModelGenerator.createTrivialCube(ModBlocks.KEHRIBAR_LEAVES);
+        blockStateModelGenerator.createTrivialCube(ModBlocks.ALTIN_LEAVES);
+        blockStateModelGenerator.createTrivialCube(ModBlocks.KIZIL_LEAVES);
     }
 
     @Override

@@ -57,6 +57,13 @@ public class Ambergrove implements ModInitializer {
         registry.add(ModBlocks.KEHRIBAR_SLAB, 5, 20);
         registry.add(ModBlocks.KEHRIBAR_FENCE, 5, 20);
         registry.add(ModBlocks.KEHRIBAR_FENCE_GATE, 5, 20);
+        registry.add(ModBlocks.KEHRIBAR_LEAVES, 30, 60);
+        registry.add(ModBlocks.ALTIN_LEAVES, 30, 60);
+        registry.add(ModBlocks.KIZIL_LEAVES, 30, 60);
+
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KEHRIBAR_LEAVES.asItem(), 0.3F);
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.ALTIN_LEAVES.asItem(), 0.3F);
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KIZIL_LEAVES.asItem(), 0.3F);
     }
 
     private void registerFuelValues() {
