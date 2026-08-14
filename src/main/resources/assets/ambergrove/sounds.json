@@ -1,0 +1,42 @@
+{
+  "ambient.wind": {
+    "subtitle": "subtitles.ambergrove.ambient.wind",
+    "sounds": [
+      {
+        "name": "minecraft:ambient/weather/rain4",
+        "volume": 0.15,
+        "pitch": 0.5
+      },
+      {
+        "name": "minecraft:ambient/cave/cave1",
+        "volume": 0.25,
+        "pitch": 1.5
+      }
+    ]
+  },
+  "ambient.leaf_rustle": {
+    "subtitle": "subtitles.ambergrove.ambient.leaf_rustle",
+    "sounds": [
+      {
+        "name": "minecraft:block/azalea_leaves/step1",
+        "volume": 0.4,
+        "pitch": 1.1
+      },
+      {
+        "name": "minecraft:block/grass/step1",
+        "volume": 0.35,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "ambient.birds": {
+    "subtitle": "subtitles.ambergrove.ambient.birds",
+    "sounds": [
+      {
+        "name": "minecraft:entity/parrot/ambient",
+        "volume": 0.2,
+        "pitch": 1.6
+      }
+    ]
+  }
+}
