@@ -67,6 +67,9 @@ public class Ambergrove implements ModInitializer {
         net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.ALTIN_LEAVES.asItem(), 0.3F);
         net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KIZIL_LEAVES.asItem(), 0.3F);
         net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KEHRIBAR_SAPLING.asItem(), 0.3F);
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.AMBER_MUSHROOM.asItem(), 0.3F);
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.AMBER_FERN.asItem(), 0.3F);
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.FALLEN_AMBER_LEAVES.asItem(), 0.3F);
     }
 
     private void registerFuelValues() {

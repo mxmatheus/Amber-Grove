@@ -17,7 +17,9 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
@@ -31,6 +33,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> KEHRIBAR_TREE_LARGE = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("kehribar_tree_large"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> FALLEN_KEHRIBAR_LOG = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("fallen_kehribar_log"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> HOLLOW_KEHRIBAR_TREE = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("hollow_kehribar_tree"));
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> AMBER_MUSHROOM_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("amber_mushroom_patch"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> AMBER_FERN_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("amber_fern_patch"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FALLEN_AMBER_LEAVES_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("fallen_amber_leaves_patch"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_STONE_CLUSTER = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("small_stone_cluster"));
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         WeightedStateProvider mixedLeafProvider = new WeightedStateProvider(
@@ -62,5 +69,10 @@ public class ModConfiguredFeatures {
         context.register(KEHRIBAR_TREE_LARGE, new ConfiguredFeature<>(Feature.TREE, largeTreeConfig));
         context.register(FALLEN_KEHRIBAR_LOG, new ConfiguredFeature<>(ModFeatures.FALLEN_KEHRIBAR_LOG, NoneFeatureConfiguration.INSTANCE));
         context.register(HOLLOW_KEHRIBAR_TREE, new ConfiguredFeature<>(ModFeatures.HOLLOW_KEHRIBAR_TREE, NoneFeatureConfiguration.INSTANCE));
+
+        context.register(AMBER_MUSHROOM_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_MUSHROOM))));
+        context.register(AMBER_FERN_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_FERN))));
+        context.register(FALLEN_AMBER_LEAVES_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.FALLEN_AMBER_LEAVES))));
+        context.register(SMALL_STONE_CLUSTER, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new net.minecraft.world.level.levelgen.feature.configurations.BlockBlobConfiguration(Blocks.STONE.defaultBlockState(), net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.alwaysTrue())));
     }
 }

@@ -48,6 +48,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialCube(ModBlocks.KIZIL_LEAVES);
 
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModBlocks.KEHRIBAR_SAPLING, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockStateModelGenerator.createCrossBlockWithDefaultItem(ModBlocks.AMBER_MUSHROOM, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockStateModelGenerator.createCrossBlockWithDefaultItem(ModBlocks.AMBER_FERN, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockStateModelGenerator.createTrivialCube(ModBlocks.FALLEN_AMBER_LEAVES);
     }
 
     @Override

@@ -91,6 +91,15 @@ public class ModBlocks {
     public static final Block KEHRIBAR_SAPLING = registerBlock("kehribar_sapling",
             new net.minecraft.world.level.block.SaplingBlock(ModTreeGrowers.KEHRIBAR, props("kehribar_sapling", Blocks.OAK_SAPLING)));
 
+    public static final Block AMBER_MUSHROOM = registerBlock("amber_mushroom",
+            new net.minecraft.world.level.block.BushBlock(props("amber_mushroom", Blocks.RED_MUSHROOM)));
+
+    public static final Block AMBER_FERN = registerBlock("amber_fern",
+            new net.minecraft.world.level.block.BushBlock(props("amber_fern", Blocks.FERN)));
+
+    public static final Block FALLEN_AMBER_LEAVES = registerBlock("fallen_amber_leaves",
+            new net.minecraft.world.level.block.CarpetBlock(props("fallen_amber_leaves", Blocks.MOSS_CARPET)));
+
     public static final Block KEHRIBAR_WALL_HANGING_SIGN = registerBlockWithoutItem("kehribar_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_wall_hanging_sign", Blocks.OAK_WALL_HANGING_SIGN)));
 

@@ -27,6 +27,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ALTIN_LEAVES, "Golden Leaves");
         translationBuilder.add(ModBlocks.KIZIL_LEAVES, "Crimson Leaves");
         translationBuilder.add(ModBlocks.KEHRIBAR_SAPLING, "Kehribar Sapling");
+        translationBuilder.add(ModBlocks.AMBER_MUSHROOM, "Amber Mushroom");
+        translationBuilder.add(ModBlocks.AMBER_FERN, "Amber Fern");
+        translationBuilder.add(ModBlocks.FALLEN_AMBER_LEAVES, "Fallen Amber Leaves");
         translationBuilder.add(ModBlocks.KEHRIBAR_PLANKS, "Kehribar Planks");
         translationBuilder.add(ModBlocks.KEHRIBAR_STAIRS, "Kehribar Stairs");
         translationBuilder.add(ModBlocks.KEHRIBAR_SLAB, "Kehribar Slab");

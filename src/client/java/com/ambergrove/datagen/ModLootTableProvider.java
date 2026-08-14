@@ -34,6 +34,9 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.ALTIN_LEAVES, block -> createLeavesDrops(block, ModBlocks.KEHRIBAR_SAPLING, NORMAL_LEAVES_SAPLING_CHANCES));
         add(ModBlocks.KIZIL_LEAVES, block -> createLeavesDrops(block, ModBlocks.KEHRIBAR_SAPLING, NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(ModBlocks.KEHRIBAR_SAPLING);
+        dropSelf(ModBlocks.AMBER_MUSHROOM);
+        dropSelf(ModBlocks.AMBER_FERN);
+        dropSelf(ModBlocks.FALLEN_AMBER_LEAVES);
 
         add(ModBlocks.KEHRIBAR_SIGN, block -> createSingleItemTable(ModItems.KEHRIBAR_SIGN));
         add(ModBlocks.KEHRIBAR_WALL_SIGN, block -> createSingleItemTable(ModItems.KEHRIBAR_SIGN));
