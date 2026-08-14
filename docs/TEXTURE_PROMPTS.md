@@ -77,3 +77,20 @@ Use this prefix before every Gemini ImageGen prompt:
 
 ## 🔒 Texture Policy
 Gemini ImageGen is the only approved AI image generation system for this project. Textures must be validated against pixel noise, seam alignment, and vanilla contrast standards before final release.
+
+---
+
+## 🌾 Decorative Autumn Flora System Texture Prompts
+
+### 14. `fallen_amber_leaves` (Ground Cover Carpet Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless 2D tiling, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> A ground layer of fallen autumn leaves. Scattered pixel clusters of warm amber orange (#D97A1E), golden yellow (#E8B94A), and copper red (#A84A1E) leaves over dark muted earth (#362115). Matches vanilla moss carpet structure.
+
+### 15. `amber_mushroom` (Decorative Forest Mushroom)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone plant layout, alpha transparency background, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Decorative autumn forest mushroom plant with a glowing warm amber cap (#F09428), golden highlights (#E8B94A), and a slender beige-brown stem (#C48A42). Cross-plant model layout.
+
+### 16. `amber_fern` (Tall Decorative Plant)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone plant layout, alpha transparency background, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> A vibrant golden-amber fern bush with delicate fronds in warm amber-orange (#D97A1E), golden yellow tips (#E8B94A), and rich copper-brown central stem (#A84A1E). Cross-plant model layout.
+
