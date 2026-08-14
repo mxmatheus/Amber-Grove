@@ -6,6 +6,7 @@ import com.ambergrove.datagen.ModLanguageProvider;
 import com.ambergrove.datagen.ModLootTableProvider;
 import com.ambergrove.datagen.ModModelProvider;
 import com.ambergrove.datagen.ModRecipeProvider;
+import com.ambergrove.datagen.ModWorldGenProvider;
 import com.ambergrove.worldgen.ModBiomes;
 import com.ambergrove.worldgen.ModConfiguredFeatures;
 import com.ambergrove.worldgen.ModPlacedFeatures;
@@ -24,6 +25,7 @@ public class AmbergroveDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(ModLootTableProvider::new);
+        pack.addProvider(ModWorldGenProvider::new);
         ModBlockTagProvider blockTagProvider = pack.addProvider(ModBlockTagProvider::new);
         pack.addProvider((output, registries) -> new ModItemTagProvider(output, registries, blockTagProvider));
     }
