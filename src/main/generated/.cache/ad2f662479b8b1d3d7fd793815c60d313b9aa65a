@@ -1,5 +1,6 @@
 // 26.2	-999999999-01-01T00:00:00	Ambergrove/Block Loot Tables
 106b32bfa5a8e7f9b7eae6e682ada654b3563eaf data/ambergrove/loot_table/blocks/altin_leaves.json
+970ce72615a986c5bc9d415b3a3d4b93a31b6767 data/ambergrove/loot_table/blocks/amber_blossom.json
 c0f7c2565523cfab0d0cf1fc3e1c2503df7774c0 data/ambergrove/loot_table/blocks/amber_fern.json
 1dc4157b8549ca77547e80ca25647f76e77fc424 data/ambergrove/loot_table/blocks/amber_mushroom.json
 8978cbfbf7811d6a52b25660559fef0745b9428a data/ambergrove/loot_table/blocks/fallen_amber_leaves.json

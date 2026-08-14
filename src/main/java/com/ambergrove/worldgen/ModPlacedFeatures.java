@@ -27,8 +27,11 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> AMBER_MUSHROOM_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("amber_mushroom_placed"));
     public static final ResourceKey<PlacedFeature> AMBER_FERN_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("amber_fern_placed"));
+    public static final ResourceKey<PlacedFeature> AMBER_BLOSSOM_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("amber_blossom_placed"));
     public static final ResourceKey<PlacedFeature> FALLEN_AMBER_LEAVES_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("fallen_amber_leaves_placed"));
     public static final ResourceKey<PlacedFeature> SMALL_STONE_CLUSTER_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("small_stone_cluster_placed"));
+    public static final ResourceKey<PlacedFeature> COARSE_DIRT_PATCH_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("coarse_dirt_patch_placed"));
+    public static final ResourceKey<PlacedFeature> MOSS_PATCH_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("moss_patch_placed"));
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -45,7 +48,7 @@ public class ModPlacedFeatures {
                 KEHRIBAR_TREE_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.KEHRIBAR_TREE),
-                        VegetationPlacements.treePlacement(PlacementUtils.countExtra(10, 0.1F, 1), ModBlocks.KEHRIBAR_SAPLING)
+                        VegetationPlacements.treePlacement(PlacementUtils.countExtra(8, 0.1F, 1), ModBlocks.KEHRIBAR_SAPLING)
                 )
         );
 
@@ -82,6 +85,14 @@ public class ModPlacedFeatures {
         );
 
         context.register(
+                AMBER_BLOSSOM_PLACED,
+                new PlacedFeature(
+                        configuredFeatures.getOrThrow(ModConfiguredFeatures.AMBER_BLOSSOM_PATCH),
+                        VegetationPlacements.worldSurfaceSquaredWithCount(6)
+                )
+        );
+
+        context.register(
                 FALLEN_AMBER_LEAVES_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_AMBER_LEAVES_PATCH),
@@ -93,7 +104,23 @@ public class ModPlacedFeatures {
                 SMALL_STONE_CLUSTER_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_STONE_CLUSTER),
-                        VegetationPlacements.worldSurfaceSquaredWithCount(1)
+                        VegetationPlacements.worldSurfaceSquaredWithCount(2)
+                )
+        );
+
+        context.register(
+                COARSE_DIRT_PATCH_PLACED,
+                new PlacedFeature(
+                        configuredFeatures.getOrThrow(ModConfiguredFeatures.COARSE_DIRT_PATCH),
+                        VegetationPlacements.worldSurfaceSquaredWithCount(3)
+                )
+        );
+
+        context.register(
+                MOSS_PATCH_PLACED,
+                new PlacedFeature(
+                        configuredFeatures.getOrThrow(ModConfiguredFeatures.MOSS_PATCH),
+                        VegetationPlacements.worldSurfaceSquaredWithCount(2)
                 )
         );
     }

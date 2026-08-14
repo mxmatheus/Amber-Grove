@@ -15,9 +15,10 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.BlockBlobConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
@@ -36,8 +37,11 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> AMBER_MUSHROOM_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("amber_mushroom_patch"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> AMBER_FERN_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("amber_fern_patch"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> AMBER_BLOSSOM_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("amber_blossom_patch"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> FALLEN_AMBER_LEAVES_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("fallen_amber_leaves_patch"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_STONE_CLUSTER = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("small_stone_cluster"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> COARSE_DIRT_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("coarse_dirt_patch"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("moss_patch"));
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         WeightedStateProvider mixedLeafProvider = new WeightedStateProvider(
@@ -49,18 +53,18 @@ public class ModConfiguredFeatures {
 
         TreeConfiguration normalTreeConfig = new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.KEHRIBAR_LOG),
-                new BendingTrunkPlacer(8, 2, 1, 3, UniformInt.of(1, 2)),
+                new BendingTrunkPlacer(5, 2, 1, 2, UniformInt.of(1, 2)),
                 mixedLeafProvider,
-                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.25F, 0.166F, 0.333F),
+                new CherryFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.25F, 0.166F, 0.333F),
                 new TwoLayersFeatureSize(1, 0, 1),
                 BlockStateProvider.simple(Blocks.DIRT)
         ).build();
 
         TreeConfiguration largeTreeConfig = new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.KEHRIBAR_LOG),
-                new BendingTrunkPlacer(11, 3, 2, 4, UniformInt.of(2, 3)),
+                new BendingTrunkPlacer(7, 2, 2, 3, UniformInt.of(2, 3)),
                 mixedLeafProvider,
-                new CherryFoliagePlacer(ConstantInt.of(5), ConstantInt.of(0), ConstantInt.of(6), 0.3F, 0.3F, 0.2F, 0.4F),
+                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.3F, 0.3F, 0.2F, 0.4F),
                 new TwoLayersFeatureSize(2, 0, 2),
                 BlockStateProvider.simple(Blocks.DIRT)
         ).build();
@@ -72,7 +76,10 @@ public class ModConfiguredFeatures {
 
         context.register(AMBER_MUSHROOM_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_MUSHROOM))));
         context.register(AMBER_FERN_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_FERN))));
+        context.register(AMBER_BLOSSOM_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_BLOSSOM))));
         context.register(FALLEN_AMBER_LEAVES_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.FALLEN_AMBER_LEAVES))));
-        context.register(SMALL_STONE_CLUSTER, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new net.minecraft.world.level.levelgen.feature.configurations.BlockBlobConfiguration(Blocks.STONE.defaultBlockState(), net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.alwaysTrue())));
+        context.register(SMALL_STONE_CLUSTER, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new BlockBlobConfiguration(Blocks.STONE.defaultBlockState(), BlockPredicate.alwaysTrue())));
+        context.register(COARSE_DIRT_PATCH, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new BlockBlobConfiguration(Blocks.COARSE_DIRT.defaultBlockState(), BlockPredicate.alwaysTrue())));
+        context.register(MOSS_PATCH, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new BlockBlobConfiguration(Blocks.MOSS_BLOCK.defaultBlockState(), BlockPredicate.alwaysTrue())));
     }
 }

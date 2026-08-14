@@ -1,9 +1,9 @@
 {
-  "feature": "ambergrove:small_stone_cluster",
+  "feature": "ambergrove:amber_blossom_patch",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 2
+      "count": 6
     },
     {
       "type": "minecraft:in_square"

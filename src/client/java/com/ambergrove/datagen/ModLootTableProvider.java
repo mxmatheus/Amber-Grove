@@ -48,6 +48,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.KEHRIBAR_SAPLING);
         dropSelf(ModBlocks.AMBER_MUSHROOM);
         dropSelf(ModBlocks.AMBER_FERN);
+        dropSelf(ModBlocks.AMBER_BLOSSOM);
         dropSelf(ModBlocks.FALLEN_AMBER_LEAVES);
 
         add(ModBlocks.KEHRIBAR_SIGN, block -> createSingleItemTable(ModItems.KEHRIBAR_SIGN));

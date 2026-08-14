@@ -41,6 +41,9 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.KEHRIBAR_HANGING_SIGN.builtInRegistryHolder().key())
                 .add(ModBlocks.KEHRIBAR_WALL_HANGING_SIGN.builtInRegistryHolder().key());
 
+        tag(BlockTags.SMALL_FLOWERS)
+                .add(ModBlocks.AMBER_BLOSSOM.builtInRegistryHolder().key());
+
         tag(BlockTags.PLANKS)
                 .add(ModBlocks.KEHRIBAR_PLANKS.builtInRegistryHolder().key());
 

@@ -13,9 +13,9 @@
       "corner_hole_chance": 0.25,
       "hanging_leaves_chance": 0.166,
       "hanging_leaves_extension_chance": 0.333,
-      "height": 5,
+      "height": 4,
       "offset": 0,
-      "radius": 4,
+      "radius": 3,
       "wide_bottom_layer_hole_chance": 0.25
     },
     "foliage_provider": {
@@ -62,7 +62,7 @@
     },
     "trunk_placer": {
       "type": "minecraft:bending_trunk_placer",
-      "base_height": 8,
+      "base_height": 5,
       "bend_length": {
         "type": "minecraft:uniform",
         "max_inclusive": 2,
@@ -70,7 +70,7 @@
       },
       "height_rand_a": 2,
       "height_rand_b": 1,
-      "min_height_for_leaves": 3
+      "min_height_for_leaves": 2
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",

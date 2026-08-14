@@ -80,13 +80,13 @@ public class ModBlocks {
             new CeilingHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_hanging_sign", Blocks.OAK_HANGING_SIGN)));
 
     public static final Block KEHRIBAR_LEAVES = registerBlock("kehribar_leaves",
-            new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("kehribar_leaves", Blocks.OAK_LEAVES)));
+            new UntintedParticleLeavesBlock(0.05F, ParticleTypes.FALLING_HONEY, props("kehribar_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block ALTIN_LEAVES = registerBlock("altin_leaves",
-            new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("altin_leaves", Blocks.OAK_LEAVES)));
+            new UntintedParticleLeavesBlock(0.05F, ParticleTypes.FALLING_HONEY, props("altin_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block KIZIL_LEAVES = registerBlock("kizil_leaves",
-            new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("kizil_leaves", Blocks.OAK_LEAVES)));
+            new UntintedParticleLeavesBlock(0.05F, ParticleTypes.FALLING_HONEY, props("kizil_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block KEHRIBAR_SAPLING = registerBlock("kehribar_sapling",
             new net.minecraft.world.level.block.SaplingBlock(ModTreeGrowers.KEHRIBAR, props("kehribar_sapling", Blocks.OAK_SAPLING)));
@@ -97,8 +97,11 @@ public class ModBlocks {
     public static final Block AMBER_FERN = registerBlock("amber_fern",
             new com.ambergrove.block.AmberFernBlock(props("amber_fern", Blocks.FERN)));
 
+    public static final Block AMBER_BLOSSOM = registerBlock("amber_blossom",
+            new com.ambergrove.block.AmberFernBlock(props("amber_blossom", Blocks.POPPY)));
+
     public static final Block FALLEN_AMBER_LEAVES = registerBlock("fallen_amber_leaves",
-            new com.ambergrove.block.FallenAmberLeavesBlock(props("fallen_amber_leaves", Blocks.MOSS_CARPET)));
+            new com.ambergrove.block.FallenAmberLeavesBlock(props("fallen_amber_leaves", Blocks.MOSS_CARPET).noOcclusion()));
 
     public static final Block KEHRIBAR_WALL_HANGING_SIGN = registerBlockWithoutItem("kehribar_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_wall_hanging_sign", Blocks.OAK_WALL_HANGING_SIGN)));

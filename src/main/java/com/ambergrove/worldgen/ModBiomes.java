@@ -42,8 +42,11 @@ public class ModBiomes {
         generationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.HOLLOW_KEHRIBAR_TREE_PLACED);
         generationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AMBER_MUSHROOM_PLACED);
         generationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AMBER_FERN_PLACED);
+        generationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AMBER_BLOSSOM_PLACED);
         generationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FALLEN_AMBER_LEAVES_PLACED);
         generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.SMALL_STONE_CLUSTER_PLACED);
+        generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.COARSE_DIRT_PATCH_PLACED);
+        generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.MOSS_PATCH_PLACED);
 
         MobSpawnSettings.Builder mobSpawnSettings = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.farmAnimals(mobSpawnSettings);

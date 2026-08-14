@@ -24,7 +24,9 @@
     ],
     [
       "minecraft:amethyst_geode",
-      "ambergrove:small_stone_cluster_placed"
+      "ambergrove:small_stone_cluster_placed",
+      "ambergrove:coarse_dirt_patch_placed",
+      "ambergrove:moss_patch_placed"
     ],
     [
       "minecraft:monster_room",
@@ -74,6 +76,7 @@
       "ambergrove:hollow_kehribar_tree_placed",
       "ambergrove:amber_mushroom_placed",
       "ambergrove:amber_fern_placed",
+      "ambergrove:amber_blossom_placed",
       "ambergrove:fallen_amber_leaves_placed"
     ]
   ],

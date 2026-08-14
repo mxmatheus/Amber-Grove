@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/carpet",
   "textures": {
-    "all": "ambergrove:block/fallen_amber_leaves"
+    "wool": "ambergrove:block/fallen_amber_leaves"
   }
 }

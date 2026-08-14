@@ -63,6 +63,7 @@ public class ModItems {
         registerBlockItem("kizil_leaves", ModBlocks.KIZIL_LEAVES);
         registerBlockItem("amber_mushroom", ModBlocks.AMBER_MUSHROOM);
         registerBlockItem("amber_fern", ModBlocks.AMBER_FERN);
+        registerBlockItem("amber_blossom", ModBlocks.AMBER_BLOSSOM);
         registerBlockItem("fallen_amber_leaves", ModBlocks.FALLEN_AMBER_LEAVES);
 
         KEHRIBAR_SIGN = registerItem("kehribar_sign",
