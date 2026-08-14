@@ -59,5 +59,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.generateFlatItem(ModItems.KEHRIBAR_HANGING_SIGN, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(ModItems.KEHRIBAR_BOAT, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(ModItems.KEHRIBAR_CHEST_BOAT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ModItems.AMBER_RESIN, ModelTemplates.FLAT_ITEM);
     }
 }

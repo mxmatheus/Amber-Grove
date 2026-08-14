@@ -43,5 +43,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.KEHRIBAR_HANGING_SIGN, "Kehribar Hanging Sign");
         translationBuilder.add(ModItems.KEHRIBAR_BOAT, "Kehribar Boat");
         translationBuilder.add(ModItems.KEHRIBAR_CHEST_BOAT, "Kehribar Boat with Chest");
+        translationBuilder.add(ModItems.AMBER_RESIN, "Amber Resin");
     }
 }

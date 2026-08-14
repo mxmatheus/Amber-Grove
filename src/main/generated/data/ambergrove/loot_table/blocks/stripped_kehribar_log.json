@@ -14,6 +14,27 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chances": [
+                0.08,
+                0.12,
+                0.16,
+                0.2
+              ],
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune"
+            }
+          ],
+          "name": "ambergrove:amber_resin"
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

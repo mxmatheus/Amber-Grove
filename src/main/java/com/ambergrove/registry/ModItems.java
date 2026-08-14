@@ -18,6 +18,9 @@ public class ModItems {
         return new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ModConstants.id(name)));
     }
 
+    public static final Item AMBER_RESIN = registerItem("amber_resin",
+            new Item(props("amber_resin")));
+
     public static final Item KEHRIBAR_SIGN = registerItem("kehribar_sign",
             new SignItem(ModBlocks.KEHRIBAR_SIGN, ModBlocks.KEHRIBAR_WALL_SIGN, props("kehribar_sign").stacksTo(16)));
 

@@ -94,3 +94,12 @@ Gemini ImageGen is the only approved AI image generation system for this project
 > Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone plant layout, alpha transparency background, no realism, no text, no watermark, crisp handcrafted pixel art quality.
 > A vibrant golden-amber fern bush with delicate fronds in warm amber-orange (#D97A1E), golden yellow tips (#E8B94A), and rich copper-brown central stem (#A84A1E). Cross-plant model layout.
 
+---
+
+## 💎 Amber Resin Resource System Texture Prompt
+
+### 17. `amber_resin` (Item Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone item layout, alpha transparency background, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> A translucent golden-amber resin crystal chunk item icon. Glowing warm amber core (#F09428), bright golden facet highlights (#F5D16E), dark copper bevel outline (#A84A1E), and smooth crystalline pixel geometry. Matches vanilla Minecraft raw resource item style (like amethyst shard/raw copper).
+
+

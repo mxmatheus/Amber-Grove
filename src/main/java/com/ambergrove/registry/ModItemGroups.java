@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .title(Component.translatable("itemGroup.ambergrove.amber_grove_tab"))
                     .displayItems((displayContext, entries) -> {
                         entries.accept(ModBlocks.KEHRIBAR_LOG);
+                        entries.accept(ModItems.AMBER_RESIN);
                         entries.accept(ModBlocks.STRIPPED_KEHRIBAR_LOG);
                         entries.accept(ModBlocks.KEHRIBAR_WOOD);
                         entries.accept(ModBlocks.STRIPPED_KEHRIBAR_WOOD);
