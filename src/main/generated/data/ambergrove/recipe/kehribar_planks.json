@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    "#minecraft:logs_that_burn"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ambergrove:kehribar_planks"
+  }
+}

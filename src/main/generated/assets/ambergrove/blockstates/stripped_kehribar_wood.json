@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ambergrove:block/stripped_kehribar_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ambergrove:block/stripped_kehribar_wood"
+    },
+    "axis=z": {
+      "model": "ambergrove:block/stripped_kehribar_wood",
+      "x": 90
+    }
+  }
+}

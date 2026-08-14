@@ -1,0 +1,21 @@
+{
+  "values": [
+    "ambergrove:kehribar_log",
+    "ambergrove:stripped_kehribar_log",
+    "ambergrove:kehribar_wood",
+    "ambergrove:stripped_kehribar_wood",
+    "ambergrove:kehribar_planks",
+    "ambergrove:kehribar_stairs",
+    "ambergrove:kehribar_slab",
+    "ambergrove:kehribar_fence",
+    "ambergrove:kehribar_fence_gate",
+    "ambergrove:kehribar_door",
+    "ambergrove:kehribar_trapdoor",
+    "ambergrove:kehribar_pressure_plate",
+    "ambergrove:kehribar_button",
+    "ambergrove:kehribar_sign",
+    "ambergrove:kehribar_wall_sign",
+    "ambergrove:kehribar_hanging_sign",
+    "ambergrove:kehribar_wall_hanging_sign"
+  ]
+}

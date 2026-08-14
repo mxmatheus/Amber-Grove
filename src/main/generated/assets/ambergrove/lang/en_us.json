@@ -1,4 +1,21 @@
 {
   "biome.ambergrove.amber_grove": "Amber Grove",
+  "block.ambergrove.kehribar_button": "Kehribar Button",
+  "block.ambergrove.kehribar_door": "Kehribar Door",
+  "block.ambergrove.kehribar_fence": "Kehribar Fence",
+  "block.ambergrove.kehribar_fence_gate": "Kehribar Fence Gate",
+  "block.ambergrove.kehribar_log": "Kehribar Log",
+  "block.ambergrove.kehribar_planks": "Kehribar Planks",
+  "block.ambergrove.kehribar_pressure_plate": "Kehribar Pressure Plate",
+  "block.ambergrove.kehribar_slab": "Kehribar Slab",
+  "block.ambergrove.kehribar_stairs": "Kehribar Stairs",
+  "block.ambergrove.kehribar_trapdoor": "Kehribar Trapdoor",
+  "block.ambergrove.kehribar_wood": "Kehribar Wood",
+  "block.ambergrove.stripped_kehribar_log": "Stripped Kehribar Log",
+  "block.ambergrove.stripped_kehribar_wood": "Stripped Kehribar Wood",
+  "item.ambergrove.kehribar_boat": "Kehribar Boat",
+  "item.ambergrove.kehribar_chest_boat": "Kehribar Boat with Chest",
+  "item.ambergrove.kehribar_hanging_sign": "Kehribar Hanging Sign",
+  "item.ambergrove.kehribar_sign": "Kehribar Sign",
   "itemGroup.ambergrove.amber_grove_tab": "Amber Grove"
 }

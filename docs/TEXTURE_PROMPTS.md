@@ -4,78 +4,76 @@
 
 Use this prefix before every Gemini ImageGen prompt:
 
-Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless where appropriate, no realism, no text, no watermark, no borders, crisp handcrafted pixel art quality.
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless where appropriate, no realism, no text, no watermark, no borders, crisp handcrafted pixel art quality.
 
-## Required Textures
+---
 
-### Tree Core
+## 🎨 Color Palette Reference
 
-- kehribar_log
-- kehribar_log_top
-- stripped_kehribar_log
-- stripped_kehribar_log_top
-- kehribar_wood
-- stripped_kehribar_wood
+- **Dark Walnut (Log Bark):** `#4B2F1F`, `#362115`, `#26160D`
+- **Amber Orange (Highlights / Accents):** `#D97A1E`, `#F09428`, `#B55E12`
+- **Golden Yellow (Pith / Foliage):** `#E8B94A`, `#F5D16E`, `#C7972E`
+- **Copper Red (Leaves / Stripped Accents):** `#A84A1E`, `#C45B28`
+- **Honey Wood (Planks & Stripped Core):** `#C48A42`, `#DF9F51`, `#A66F2E`
+- **Muted Olive (Moss & Ground):** `#6A7A3A`, `#4E5B28`
 
-### Leaves
+---
 
-- kehribar_leaves
-- altin_leaves
-- kizil_leaves
+## 🪵 Required Kehribar Wood Set Texture Prompts
 
-### Wood Set
+### 1. `kehribar_log` (Side Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless vertical tiling, no realism, no text, no watermark, no borders, crisp handcrafted pixel art quality.
+> Deep dark walnut tree bark (#4B2F1F) with vertical bark grooves, rich wood grain texture, subtle amber resin veins (#D97A1E) running vertically through the crevices. Matches vanilla Minecraft log side contrast.
 
-- kehribar_planks
-- kehribar_stairs
-- kehribar_slab
-- kehribar_fence
-- kehribar_fence_gate
-- kehribar_door
-- kehribar_trapdoor
-- kehribar_pressure_plate
-- kehribar_button
-- kehribar_sign
-- kehribar_hanging_sign
+### 2. `kehribar_log_top` (Cross-Section)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, concentric square ring alignment, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Concentric tree growth rings for a dark walnut log. Dark outer bark ring (#4B2F1F), warm honey-brown wood interior (#C48A42), with a glowing golden amber pith core (#E8B94A) at the center.
 
-### Decorative
+### 3. `stripped_kehribar_log` (Stripped Side)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless vertical tiling, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Smooth axed-stripped tree trunk surface in warm honey wood (#C48A42) with long subtle vertical wood fibers, soft amber-gold undertones (#DF9F51), and gentle axe stroke highlights.
 
-- fallen_amber_leaves
-- amber_mushroom
-- amber_fern
+### 4. `stripped_kehribar_log_top` (Stripped Top)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, concentric ring alignment, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Clean stripped log cross-section. Smooth warm honey-gold wood grain (#C48A42), subtle concentric rings, and a rich golden-amber heartwood center (#E8B94A) without bark.
 
-### Resources
+### 5. `kehribar_wood` (All-Bark Block Side)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless 2D tiling in both directions, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Continuous dark walnut tree bark (#4B2F1F) matching `kehribar_log` bark texture, fully seamless on all four edges, with vertical bark furrows and amber resin highlights.
 
-- amber_resin
-- amber_lantern
-- amber_block
-- polished_amber_block
-- amber_tile
+### 6. `stripped_kehribar_wood` (All-Stripped Block Side)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless 2D tiling, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Continuous smooth stripped wood grain in warm honey-gold (#C48A42) matching `stripped_kehribar_log`, fully seamless on all edges without bark boundaries.
 
-### Boats
+### 7. `kehribar_planks` (Plank Block Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless tiling, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Horizontal wooden planks crafted from Kehribar wood. Rich golden-honey wood tone (#C48A42) with subtle warm copper-orange grain lines (#A84A1E) and dark walnut plank bevel shadows (#362115). Matches vanilla oak/cherry plank structure.
 
-- kehribar_boat
-- kehribar_chest_boat
+### 8. `kehribar_door` (Door Block & Item Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, correct alpha transparency gaps, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Wooden door panel made of golden-amber planks (#C48A42) with dark walnut frame (#4B2F1F), small rectangular glass or carved amber window inserts in top section, and a dark iron/polished amber handle.
 
-## Example Prompt — Amber Leaves
+### 9. `kehribar_trapdoor` (Trapdoor Block & Item Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, alpha transparency gaps, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Wooden trapdoor with four rectangular slatted openings. Golden-amber wood frame (#C48A42) with dark walnut crossbars (#4B2F1F) and clean transparent gaps matching vanilla trapdoors.
 
-Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, seamless where appropriate, no realism, no text, no watermark, no borders, crisp handcrafted pixel art quality.
+### 10. `kehribar_sign` (Sign Item & Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone item layout, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> A wooden sign item with a smooth golden-amber wooden board (#C48A42) mounted on a dark walnut wooden post (#4B2F1F), angled inventory icon view.
 
-Create layered amber-orange autumn leaves with subtle golden and copper-red variation. Include small transparency-friendly gaps and natural clustered foliage suitable for a Minecraft leaf block.
+### 11. `kehribar_hanging_sign` (Hanging Sign Item & Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone item layout, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> A hanging wooden sign item with a golden-amber plank board (#C48A42) suspended from two dark iron chains attached to a dark walnut top bar.
 
-## Color Palette
+### 12. `kehribar_boat` (Boat Item & Entity Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone item layout, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Minecraft wooden boat icon crafted from golden-amber planks (#C48A42) with dark walnut rim (#4B2F1F) and wooden oars resting inside, top-down isometric item perspective.
 
-Dark Walnut #4B2F1F
+### 13. `kehribar_chest_boat` (Chest Boat Item & Entity Texture)
+> Create a Minecraft Java Edition 26.2 compatible pixel art texture. Resolution 32×32 pixels. Vanilla-style, clean pixel clusters, limited color palette, standalone item layout, no realism, no text, no watermark, crisp handcrafted pixel art quality.
+> Minecraft wooden boat with chest icon. Golden-amber boat hull (#C48A42), dark walnut rim, containing a wooden storage chest with iron latch mounted in the rear seat.
 
-Amber Orange #D97A1E
+---
 
-Golden Yellow #E8B94A
-
-Copper Red #A84A1E
-
-Honey Wood #C48A42
-
-Muted Olive #6A7A3A
-
-## AI Rule
-
-Gemini ImageGen is the only approved texture generation system for this project.
+## 🔒 Texture Policy
+Gemini ImageGen is the only approved AI image generation system for this project. Textures must be validated against pixel noise, seam alignment, and vanilla contrast standards before final release.

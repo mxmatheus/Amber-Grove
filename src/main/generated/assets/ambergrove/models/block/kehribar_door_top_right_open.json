@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "ambergrove:block/kehribar_door_bottom",
+    "top": "ambergrove:block/kehribar_door_top"
+  }
+}

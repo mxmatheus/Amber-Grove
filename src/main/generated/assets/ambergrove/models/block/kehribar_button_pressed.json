@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "ambergrove:block/kehribar_planks"
+  }
+}

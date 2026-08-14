@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ambergrove:block/kehribar_planks",
+    "side": "ambergrove:block/kehribar_planks",
+    "top": "ambergrove:block/kehribar_planks"
+  }
+}

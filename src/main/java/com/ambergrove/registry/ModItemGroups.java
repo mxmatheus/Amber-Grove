@@ -7,7 +7,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 public class ModItemGroups {
 
@@ -15,10 +14,26 @@ public class ModItemGroups {
             BuiltInRegistries.CREATIVE_MODE_TAB,
             ModConstants.id("amber_grove_tab"),
             FabricCreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Items.OAK_LOG))
+                    .icon(() -> new ItemStack(ModBlocks.KEHRIBAR_LOG))
                     .title(Component.translatable("itemGroup.ambergrove.amber_grove_tab"))
                     .displayItems((displayContext, entries) -> {
-                        // Items will be added here in future phases
+                        entries.accept(ModBlocks.KEHRIBAR_LOG);
+                        entries.accept(ModBlocks.STRIPPED_KEHRIBAR_LOG);
+                        entries.accept(ModBlocks.KEHRIBAR_WOOD);
+                        entries.accept(ModBlocks.STRIPPED_KEHRIBAR_WOOD);
+                        entries.accept(ModBlocks.KEHRIBAR_PLANKS);
+                        entries.accept(ModBlocks.KEHRIBAR_STAIRS);
+                        entries.accept(ModBlocks.KEHRIBAR_SLAB);
+                        entries.accept(ModBlocks.KEHRIBAR_FENCE);
+                        entries.accept(ModBlocks.KEHRIBAR_FENCE_GATE);
+                        entries.accept(ModBlocks.KEHRIBAR_DOOR);
+                        entries.accept(ModBlocks.KEHRIBAR_TRAPDOOR);
+                        entries.accept(ModBlocks.KEHRIBAR_PRESSURE_PLATE);
+                        entries.accept(ModBlocks.KEHRIBAR_BUTTON);
+                        entries.accept(ModItems.KEHRIBAR_SIGN);
+                        entries.accept(ModItems.KEHRIBAR_HANGING_SIGN);
+                        entries.accept(ModItems.KEHRIBAR_BOAT);
+                        entries.accept(ModItems.KEHRIBAR_CHEST_BOAT);
                     })
                     .build()
     );

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ambergrove:block/kehribar_slab"
+    },
+    "type=double": {
+      "model": "ambergrove:block/kehribar_planks"
+    },
+    "type=top": {
+      "model": "ambergrove:block/kehribar_slab_top"
+    }
+  }
+}

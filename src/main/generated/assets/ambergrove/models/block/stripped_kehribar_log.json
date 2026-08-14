@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ambergrove:block/stripped_kehribar_log_top",
+    "side": "ambergrove:block/stripped_kehribar_log"
+  }
+}

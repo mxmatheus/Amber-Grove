@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "ambergrove:kehribar_planks"
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " # "
+  ],
+  "result": {
+    "count": 3,
+    "id": "ambergrove:kehribar_sign"
+  }
+}

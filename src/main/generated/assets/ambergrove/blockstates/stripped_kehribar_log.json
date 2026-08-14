@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ambergrove:block/stripped_kehribar_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ambergrove:block/stripped_kehribar_log"
+    },
+    "axis=z": {
+      "model": "ambergrove:block/stripped_kehribar_log_horizontal",
+      "x": 90
+    }
+  }
+}
