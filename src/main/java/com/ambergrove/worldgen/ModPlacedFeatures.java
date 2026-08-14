@@ -69,7 +69,7 @@ public class ModPlacedFeatures {
                 AMBER_MUSHROOM_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.AMBER_MUSHROOM_PATCH),
-                        VegetationPlacements.worldSurfaceSquaredWithCount(2)
+                        VegetationPlacements.worldSurfaceSquaredWithCount(4)
                 )
         );
 
@@ -77,7 +77,7 @@ public class ModPlacedFeatures {
                 AMBER_FERN_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.AMBER_FERN_PATCH),
-                        VegetationPlacements.worldSurfaceSquaredWithCount(4)
+                        VegetationPlacements.worldSurfaceSquaredWithCount(8)
                 )
         );
 
@@ -85,7 +85,7 @@ public class ModPlacedFeatures {
                 FALLEN_AMBER_LEAVES_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_AMBER_LEAVES_PATCH),
-                        VegetationPlacements.worldSurfaceSquaredWithCount(6)
+                        VegetationPlacements.worldSurfaceSquaredWithCount(12)
                 )
         );
 

@@ -104,9 +104,7 @@ public class ModBlocks {
             new WallHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_wall_hanging_sign", Blocks.OAK_WALL_HANGING_SIGN)));
 
     private static Block registerBlock(String name, Block block) {
-        registerBlockWithoutItem(name, block);
-        ModItems.registerBlockItem(name, block);
-        return block;
+        return registerBlockWithoutItem(name, block);
     }
 
     public static Block registerBlockWithoutItem(String name, Block block) {

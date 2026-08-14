@@ -2,7 +2,7 @@
   "attributes": {
     "minecraft:visual/fog_color": "#e69d45",
     "minecraft:visual/sky_color": "#d98638",
-    "minecraft:visual/water_fog_color": "#050533"
+    "minecraft:visual/water_fog_color": "#995c17"
   },
   "carvers": [
     "minecraft:cave",
@@ -14,7 +14,7 @@
     "dry_foliage_color": "#b55e12",
     "foliage_color": "#d97a1e",
     "grass_color": "#d88a28",
-    "water_color": "#3f76e4"
+    "water_color": "#df9c36"
   },
   "features": [
     [],

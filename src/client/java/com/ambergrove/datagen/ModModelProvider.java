@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.BlockFamily;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -43,9 +44,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createParticleOnlyBlock(ModBlocks.KEHRIBAR_HANGING_SIGN, ModBlocks.STRIPPED_KEHRIBAR_LOG);
         blockStateModelGenerator.createParticleOnlyBlock(ModBlocks.KEHRIBAR_WALL_HANGING_SIGN, ModBlocks.STRIPPED_KEHRIBAR_LOG);
 
-        blockStateModelGenerator.createTrivialCube(ModBlocks.KEHRIBAR_LEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlocks.ALTIN_LEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlocks.KIZIL_LEAVES);
+        blockStateModelGenerator.createTrivialBlock(ModBlocks.KEHRIBAR_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.createTrivialBlock(ModBlocks.ALTIN_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.createTrivialBlock(ModBlocks.KIZIL_LEAVES, TexturedModel.LEAVES);
 
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModBlocks.KEHRIBAR_SAPLING, BlockModelGenerators.PlantType.NOT_TINTED);
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModBlocks.AMBER_MUSHROOM, BlockModelGenerators.PlantType.NOT_TINTED);

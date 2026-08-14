@@ -50,7 +50,7 @@ public class ModBiomes {
         BiomeDefaultFeatures.commonSpawns(mobSpawnSettings);
 
         BiomeSpecialEffects specialEffects = new BiomeSpecialEffects.Builder()
-                .waterColor(0x3f76e4)
+                .waterColor(0xdf9c36)
                 .foliageColorOverride(0xd97a1e)
                 .dryFoliageColorOverride(0xb55e12)
                 .grassColorOverride(0xd88a28)
@@ -63,7 +63,7 @@ public class ModBiomes {
                 .specialEffects(specialEffects)
                 .setAttribute(EnvironmentAttributes.FOG_COLOR, 0xe69d45)
                 .setAttribute(EnvironmentAttributes.SKY_COLOR, 0xd98638)
-                .setAttribute(EnvironmentAttributes.WATER_FOG_COLOR, 0x050533)
+                .setAttribute(EnvironmentAttributes.WATER_FOG_COLOR, 0x995c17)
                 .mobSpawnSettings(mobSpawnSettings.build())
                 .generationSettings(generationSettings.build())
                 .build();
