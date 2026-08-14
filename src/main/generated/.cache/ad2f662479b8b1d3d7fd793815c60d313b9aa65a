@@ -1,8 +1,11 @@
 // 26.2	-999999999-01-01T00:00:00	Ambergrove/Block Loot Tables
 106b32bfa5a8e7f9b7eae6e682ada654b3563eaf data/ambergrove/loot_table/blocks/altin_leaves.json
+3e5c995465811cd77be67c502f99bf283bc473d4 data/ambergrove/loot_table/blocks/amber_block.json
 970ce72615a986c5bc9d415b3a3d4b93a31b6767 data/ambergrove/loot_table/blocks/amber_blossom.json
 c0f7c2565523cfab0d0cf1fc3e1c2503df7774c0 data/ambergrove/loot_table/blocks/amber_fern.json
+a29a47ff3d823e8ba8e890dd46256d7bad94fa7b data/ambergrove/loot_table/blocks/amber_lantern.json
 1dc4157b8549ca77547e80ca25647f76e77fc424 data/ambergrove/loot_table/blocks/amber_mushroom.json
+ffdbe7ca6b3b4c8296cfd4186aebc6873cf4c4f3 data/ambergrove/loot_table/blocks/amber_tile.json
 8978cbfbf7811d6a52b25660559fef0745b9428a data/ambergrove/loot_table/blocks/fallen_amber_leaves.json
 b82ecc5ced5ee973601cd15380169e8e1054cdd9 data/ambergrove/loot_table/blocks/kehribar_button.json
 5f68c88c556c34a2707543d98aec8c024caab3b7 data/ambergrove/loot_table/blocks/kehribar_door.json
@@ -22,5 +25,6 @@ ff2763d980d0a03c84d489407005950a8f2e2095 data/ambergrove/loot_table/blocks/kehri
 4f2dd9fb2487e4e0dc2204345e74f97bbc383592 data/ambergrove/loot_table/blocks/kehribar_wall_sign.json
 8d6549184c25df9e6606733a31b234778527a0c8 data/ambergrove/loot_table/blocks/kehribar_wood.json
 a95c8a33b92c119a124f36752e2974075d1e7a5b data/ambergrove/loot_table/blocks/kizil_leaves.json
+08a4e7ed93bcb49e7925996fc9d58ff1701b0e9a data/ambergrove/loot_table/blocks/polished_amber_block.json
 0327e611234154b34b8cb391a28e632d5425c009 data/ambergrove/loot_table/blocks/stripped_kehribar_log.json
 a63ca0f2312c1b7535840100b244d536959f02d1 data/ambergrove/loot_table/blocks/stripped_kehribar_wood.json

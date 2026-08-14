@@ -5,6 +5,7 @@
 45f658e72a20f0d88c67f05c633e31b77f4ab26d data/minecraft/tags/block/logs.json
 913bda8157975fbde09f942a02778ef4c05fe5d3 data/minecraft/tags/block/mineable/axe.json
 6186ab181e95afe3b392d0b39c5409df714293da data/minecraft/tags/block/mineable/hoe.json
+95f6fbc813d3ba211eb57d6a14f0448d508f8d42 data/minecraft/tags/block/mineable/pickaxe.json
 f855d42f880906c9c6b20bcf0477affbbdf66831 data/minecraft/tags/block/planks.json
 6996686ef90769d1bb9260f722e98deee1325669 data/minecraft/tags/block/saplings.json
 f9c74913d4e457e2041f6c73b46ed96bc108dd1a data/minecraft/tags/block/small_flowers.json

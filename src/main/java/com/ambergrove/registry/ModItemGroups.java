@@ -30,6 +30,10 @@ public class ModItemGroups {
                         entries.accept(ModBlocks.AMBER_FERN);
                         entries.accept(ModBlocks.AMBER_BLOSSOM);
                         entries.accept(ModBlocks.FALLEN_AMBER_LEAVES);
+                        entries.accept(ModBlocks.AMBER_LANTERN);
+                        entries.accept(ModBlocks.AMBER_BLOCK);
+                        entries.accept(ModBlocks.POLISHED_AMBER_BLOCK);
+                        entries.accept(ModBlocks.AMBER_TILE);
                         entries.accept(ModBlocks.KEHRIBAR_PLANKS);
                         entries.accept(ModBlocks.KEHRIBAR_STAIRS);
                         entries.accept(ModBlocks.KEHRIBAR_SLAB);

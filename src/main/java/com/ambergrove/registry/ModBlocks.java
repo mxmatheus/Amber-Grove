@@ -103,6 +103,18 @@ public class ModBlocks {
     public static final Block FALLEN_AMBER_LEAVES = registerBlock("fallen_amber_leaves",
             new com.ambergrove.block.FallenAmberLeavesBlock(props("fallen_amber_leaves", Blocks.MOSS_CARPET).noOcclusion()));
 
+    public static final Block AMBER_LANTERN = registerBlock("amber_lantern",
+            new net.minecraft.world.level.block.LanternBlock(props("amber_lantern", Blocks.LANTERN).sound(net.minecraft.world.level.block.SoundType.LANTERN).strength(1.5F, 6.0F).lightLevel(state -> 15)));
+
+    public static final Block AMBER_BLOCK = registerBlock("amber_block",
+            new Block(props("amber_block", Blocks.GLASS).sound(net.minecraft.world.level.block.SoundType.AMETHYST).strength(2.0F, 6.0F).lightLevel(state -> 7)));
+
+    public static final Block POLISHED_AMBER_BLOCK = registerBlock("polished_amber_block",
+            new Block(props("polished_amber_block", Blocks.GLASS).sound(net.minecraft.world.level.block.SoundType.AMETHYST).strength(2.0F, 6.0F)));
+
+    public static final Block AMBER_TILE = registerBlock("amber_tile",
+            new Block(props("amber_tile", Blocks.GLASS).sound(net.minecraft.world.level.block.SoundType.AMETHYST).strength(2.0F, 6.0F)));
+
     public static final Block KEHRIBAR_WALL_HANGING_SIGN = registerBlockWithoutItem("kehribar_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_wall_hanging_sign", Blocks.OAK_WALL_HANGING_SIGN)));
 

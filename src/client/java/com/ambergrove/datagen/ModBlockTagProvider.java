@@ -44,6 +44,12 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.AMBER_BLOSSOM.builtInRegistryHolder().key());
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.AMBER_LANTERN.builtInRegistryHolder().key())
+                .add(ModBlocks.AMBER_BLOCK.builtInRegistryHolder().key())
+                .add(ModBlocks.POLISHED_AMBER_BLOCK.builtInRegistryHolder().key())
+                .add(ModBlocks.AMBER_TILE.builtInRegistryHolder().key());
+
         tag(BlockTags.PLANKS)
                 .add(ModBlocks.KEHRIBAR_PLANKS.builtInRegistryHolder().key());
 

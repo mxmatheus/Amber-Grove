@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "R": "ambergrove:amber_resin",
+    "T": "minecraft:torch"
+  },
+  "pattern": [
+    "RRR",
+    "RTR",
+    "RRR"
+  ],
+  "result": {
+    "id": "ambergrove:amber_lantern"
+  }
+}

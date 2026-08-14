@@ -84,6 +84,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 woodenBoat(ModItems.KEHRIBAR_BOAT, ModBlocks.KEHRIBAR_PLANKS);
                 chestBoat(ModItems.KEHRIBAR_CHEST_BOAT, ModItems.KEHRIBAR_BOAT);
+
+                shaped(RecipeCategory.DECORATIONS, ModBlocks.AMBER_LANTERN, 1)
+                        .define('R', ModItems.AMBER_RESIN)
+                        .define('T', Items.TORCH)
+                        .pattern("RRR")
+                        .pattern("RTR")
+                        .pattern("RRR")
+                        .unlockedBy("has_amber_resin", has(ModItems.AMBER_RESIN))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBER_BLOCK, 1)
+                        .define('R', ModItems.AMBER_RESIN)
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .unlockedBy("has_amber_resin", has(ModItems.AMBER_RESIN))
+                        .save(recipeOutput);
+
+                shapeless(RecipeCategory.MISC, ModItems.AMBER_RESIN, 9)
+                        .requires(ModBlocks.AMBER_BLOCK)
+                        .unlockedBy("has_amber_block", has(ModBlocks.AMBER_BLOCK))
+                        .save(recipeOutput, "amber_resin_from_amber_block");
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_AMBER_BLOCK, 4)
+                        .define('A', ModBlocks.AMBER_BLOCK)
+                        .pattern("AA")
+                        .pattern("AA")
+                        .unlockedBy("has_amber_block", has(ModBlocks.AMBER_BLOCK))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBER_TILE, 4)
+                        .define('P', ModBlocks.POLISHED_AMBER_BLOCK)
+                        .pattern("PP")
+                        .pattern("PP")
+                        .unlockedBy("has_polished_amber_block", has(ModBlocks.POLISHED_AMBER_BLOCK))
+                        .save(recipeOutput);
             }
         };
     }

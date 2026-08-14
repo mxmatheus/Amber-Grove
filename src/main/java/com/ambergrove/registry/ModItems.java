@@ -65,6 +65,10 @@ public class ModItems {
         registerBlockItem("amber_fern", ModBlocks.AMBER_FERN);
         registerBlockItem("amber_blossom", ModBlocks.AMBER_BLOSSOM);
         registerBlockItem("fallen_amber_leaves", ModBlocks.FALLEN_AMBER_LEAVES);
+        registerBlockItem("amber_lantern", ModBlocks.AMBER_LANTERN);
+        registerBlockItem("amber_block", ModBlocks.AMBER_BLOCK);
+        registerBlockItem("polished_amber_block", ModBlocks.POLISHED_AMBER_BLOCK);
+        registerBlockItem("amber_tile", ModBlocks.AMBER_TILE);
 
         KEHRIBAR_SIGN = registerItem("kehribar_sign",
                 new SignItem(ModBlocks.KEHRIBAR_SIGN, ModBlocks.KEHRIBAR_WALL_SIGN, props("kehribar_sign").stacksTo(16)));
