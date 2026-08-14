@@ -76,6 +76,38 @@ Detailed technical specifications for the project are organized under `docs/`:
 
 ---
 
+## 🧱 Project Architecture & Foundation
+
+The Amber Grove mod is organized using a clean, modular package structure targeting Minecraft 26.2 and Fabric:
+
+```
+com.ambergrove
+├── Ambergrove.java             # Main Mod Initializer
+├── client/
+│   ├── AmbergroveClient.java   # Client Mod Initializer
+│   └── AmbergroveDataGenerator.java # Datagen Entrypoint
+├── datagen/                    # Fabric Data Generation Providers
+│   ├── ModLanguageProvider.java
+│   ├── ModModelProvider.java
+│   ├── ModRecipeProvider.java
+│   ├── ModLootTableProvider.java
+│   ├── ModBlockTagProvider.java
+│   └── ModItemTagProvider.java
+├── registry/                   # Modular Registry System
+│   ├── ModBlocks.java          # Block Registrations
+│   ├── ModItems.java           # Item Registrations
+│   ├── ModItemGroups.java      # Creative Mode Tab
+│   ├── ModBiomes.java          # Biome Keys & Generation
+│   ├── ModWorldGen.java        # Worldgen Features & Placements
+│   ├── ModSounds.java          # Sound Event Registrations
+│   ├── ModParticles.java       # Particle Type Registrations
+│   └── ModStructures.java      # Structure Features & Pieces
+└── util/
+    └── ModConstants.java       # Identifiers & SLF4J Logger
+```
+
+---
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
