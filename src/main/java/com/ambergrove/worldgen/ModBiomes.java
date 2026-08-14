@@ -47,6 +47,7 @@ public class ModBiomes {
         generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.SMALL_STONE_CLUSTER_PLACED);
         generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.COARSE_DIRT_PATCH_PLACED);
         generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.MOSS_PATCH_PLACED);
+        generationSettings.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.PODZOL_PATCH_PLACED);
 
         MobSpawnSettings.Builder mobSpawnSettings = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.farmAnimals(mobSpawnSettings);

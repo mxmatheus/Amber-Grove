@@ -80,13 +80,13 @@ public class ModBlocks {
             new CeilingHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_hanging_sign", Blocks.OAK_HANGING_SIGN)));
 
     public static final Block KEHRIBAR_LEAVES = registerBlock("kehribar_leaves",
-            new UntintedParticleLeavesBlock(0.05F, ParticleTypes.FALLING_HONEY, props("kehribar_leaves", Blocks.OAK_LEAVES)));
+            new com.ambergrove.block.AmberLeavesBlock(ParticleTypes.FALLING_HONEY, props("kehribar_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block ALTIN_LEAVES = registerBlock("altin_leaves",
-            new UntintedParticleLeavesBlock(0.05F, ParticleTypes.FALLING_HONEY, props("altin_leaves", Blocks.OAK_LEAVES)));
+            new com.ambergrove.block.AmberLeavesBlock(ParticleTypes.FALLING_HONEY, props("altin_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block KIZIL_LEAVES = registerBlock("kizil_leaves",
-            new UntintedParticleLeavesBlock(0.05F, ParticleTypes.FALLING_HONEY, props("kizil_leaves", Blocks.OAK_LEAVES)));
+            new com.ambergrove.block.AmberLeavesBlock(ParticleTypes.FALLING_HONEY, props("kizil_leaves", Blocks.OAK_LEAVES)));
 
     public static final Block KEHRIBAR_SAPLING = registerBlock("kehribar_sapling",
             new net.minecraft.world.level.block.SaplingBlock(ModTreeGrowers.KEHRIBAR, props("kehribar_sapling", Blocks.OAK_SAPLING)));

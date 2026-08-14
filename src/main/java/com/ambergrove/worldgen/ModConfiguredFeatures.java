@@ -19,6 +19,7 @@ import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.BlockBlobConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
@@ -27,6 +28,8 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePl
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
+
+import java.util.List;
 
 public class ModConfiguredFeatures {
 
@@ -42,6 +45,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_STONE_CLUSTER = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("small_stone_cluster"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> COARSE_DIRT_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("coarse_dirt_patch"));
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("moss_patch"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PODZOL_PATCH = ResourceKey.create(Registries.CONFIGURED_FEATURE, ModConstants.id("podzol_patch"));
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         WeightedStateProvider mixedLeafProvider = new WeightedStateProvider(
@@ -79,7 +83,11 @@ public class ModConfiguredFeatures {
         context.register(AMBER_BLOSSOM_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_BLOSSOM))));
         context.register(FALLEN_AMBER_LEAVES_PATCH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.FALLEN_AMBER_LEAVES))));
         context.register(SMALL_STONE_CLUSTER, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new BlockBlobConfiguration(Blocks.STONE.defaultBlockState(), BlockPredicate.alwaysTrue())));
-        context.register(COARSE_DIRT_PATCH, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new BlockBlobConfiguration(Blocks.COARSE_DIRT.defaultBlockState(), BlockPredicate.alwaysTrue())));
-        context.register(MOSS_PATCH, new ConfiguredFeature<>(Feature.BLOCK_BLOB, new BlockBlobConfiguration(Blocks.MOSS_BLOCK.defaultBlockState(), BlockPredicate.alwaysTrue())));
+
+        // Flat ground disks integrated into grass surface!
+        BlockPredicate groundTarget = BlockPredicate.matchesBlocks(List.of(Blocks.GRASS_BLOCK, Blocks.DIRT));
+        context.register(COARSE_DIRT_PATCH, new ConfiguredFeature<>(Feature.DISK, new DiskConfiguration(BlockStateProvider.simple(Blocks.COARSE_DIRT), groundTarget, UniformInt.of(2, 4), 1)));
+        context.register(MOSS_PATCH, new ConfiguredFeature<>(Feature.DISK, new DiskConfiguration(BlockStateProvider.simple(Blocks.MOSS_BLOCK), groundTarget, UniformInt.of(2, 3), 1)));
+        context.register(PODZOL_PATCH, new ConfiguredFeature<>(Feature.DISK, new DiskConfiguration(BlockStateProvider.simple(Blocks.PODZOL), groundTarget, UniformInt.of(2, 4), 1)));
     }
 }

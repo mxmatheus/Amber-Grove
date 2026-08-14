@@ -32,6 +32,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SMALL_STONE_CLUSTER_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("small_stone_cluster_placed"));
     public static final ResourceKey<PlacedFeature> COARSE_DIRT_PATCH_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("coarse_dirt_patch_placed"));
     public static final ResourceKey<PlacedFeature> MOSS_PATCH_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("moss_patch_placed"));
+    public static final ResourceKey<PlacedFeature> PODZOL_PATCH_PLACED = ResourceKey.create(Registries.PLACED_FEATURE, ModConstants.id("podzol_patch_placed"));
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -112,7 +113,7 @@ public class ModPlacedFeatures {
                 COARSE_DIRT_PATCH_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.COARSE_DIRT_PATCH),
-                        VegetationPlacements.worldSurfaceSquaredWithCount(3)
+                        VegetationPlacements.worldSurfaceSquaredWithCount(4)
                 )
         );
 
@@ -120,7 +121,15 @@ public class ModPlacedFeatures {
                 MOSS_PATCH_PLACED,
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(ModConfiguredFeatures.MOSS_PATCH),
-                        VegetationPlacements.worldSurfaceSquaredWithCount(2)
+                        VegetationPlacements.worldSurfaceSquaredWithCount(3)
+                )
+        );
+
+        context.register(
+                PODZOL_PATCH_PLACED,
+                new PlacedFeature(
+                        configuredFeatures.getOrThrow(ModConfiguredFeatures.PODZOL_PATCH),
+                        VegetationPlacements.worldSurfaceSquaredWithCount(4)
                 )
         );
     }

@@ -10,7 +10,10 @@
     "state_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:coarse_dirt"
+        "Name": "minecraft:podzol",
+        "Properties": {
+          "snowy": "false"
+        }
       }
     },
     "target": {

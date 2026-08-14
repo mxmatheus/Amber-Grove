@@ -1,9 +1,9 @@
 {
-  "feature": "ambergrove:moss_patch",
+  "feature": "ambergrove:podzol_patch",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 3
+      "count": 4
     },
     {
       "type": "minecraft:in_square"
