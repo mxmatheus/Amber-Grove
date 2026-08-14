@@ -3,6 +3,7 @@ package com.ambergrove;
 import com.ambergrove.registry.ModBiomes;
 import com.ambergrove.registry.ModBlocks;
 import com.ambergrove.registry.ModEntities;
+import com.ambergrove.registry.ModFeatures;
 import com.ambergrove.registry.ModItemGroups;
 import com.ambergrove.registry.ModItems;
 import com.ambergrove.registry.ModParticles;
@@ -28,6 +29,7 @@ public class Ambergrove implements ModInitializer {
         ModItemGroups.registerItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+        ModFeatures.registerFeatures();
         ModSounds.registerSounds();
         ModParticles.registerParticles();
         ModStructures.registerStructures();
@@ -64,6 +66,7 @@ public class Ambergrove implements ModInitializer {
         net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KEHRIBAR_LEAVES.asItem(), 0.3F);
         net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.ALTIN_LEAVES.asItem(), 0.3F);
         net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KIZIL_LEAVES.asItem(), 0.3F);
+        net.minecraft.world.level.block.ComposterBlock.COMPOSTABLES.put(ModBlocks.KEHRIBAR_SAPLING.asItem(), 0.3F);
     }
 
     private void registerFuelValues() {

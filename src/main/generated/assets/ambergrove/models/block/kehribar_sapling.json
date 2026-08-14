@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ambergrove:block/kehribar_sapling"
+  }
+}

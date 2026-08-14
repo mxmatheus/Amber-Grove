@@ -40,5 +40,8 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModBlocks.KEHRIBAR_LEAVES.asItem().builtInRegistryHolder().key())
                 .add(ModBlocks.ALTIN_LEAVES.asItem().builtInRegistryHolder().key())
                 .add(ModBlocks.KIZIL_LEAVES.asItem().builtInRegistryHolder().key());
+
+        tag(ItemTags.SAPLINGS)
+                .add(ModBlocks.KEHRIBAR_SAPLING.asItem().builtInRegistryHolder().key());
     }
 }

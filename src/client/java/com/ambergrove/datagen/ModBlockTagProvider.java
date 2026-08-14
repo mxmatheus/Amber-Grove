@@ -89,5 +89,8 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.KEHRIBAR_LEAVES.builtInRegistryHolder().key())
                 .add(ModBlocks.ALTIN_LEAVES.builtInRegistryHolder().key())
                 .add(ModBlocks.KIZIL_LEAVES.builtInRegistryHolder().key());
+
+        tag(net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK, net.minecraft.resources.Identifier.fromNamespaceAndPath("minecraft", "saplings")))
+                .add(ModBlocks.KEHRIBAR_SAPLING.builtInRegistryHolder().key());
     }
 }

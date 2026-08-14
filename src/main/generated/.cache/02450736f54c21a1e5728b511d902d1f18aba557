@@ -6,6 +6,7 @@
 913bda8157975fbde09f942a02778ef4c05fe5d3 data/minecraft/tags/block/mineable/axe.json
 6186ab181e95afe3b392d0b39c5409df714293da data/minecraft/tags/block/mineable/hoe.json
 f855d42f880906c9c6b20bcf0477affbbdf66831 data/minecraft/tags/block/planks.json
+6996686ef90769d1bb9260f722e98deee1325669 data/minecraft/tags/block/saplings.json
 4512144e699c9e3054a3cbe1c7df5ee06f381aef data/minecraft/tags/block/standing_signs.json
 2e0cda88007c7733cee043802a60545977e2b39b data/minecraft/tags/block/wall_hanging_signs.json
 610e01b7b11d93f7c3a10ac69f44426535484e50 data/minecraft/tags/block/wall_signs.json

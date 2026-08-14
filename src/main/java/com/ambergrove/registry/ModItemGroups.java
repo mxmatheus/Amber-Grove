@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.accept(ModBlocks.KEHRIBAR_LEAVES);
                         entries.accept(ModBlocks.ALTIN_LEAVES);
                         entries.accept(ModBlocks.KIZIL_LEAVES);
+                        entries.accept(ModBlocks.KEHRIBAR_SAPLING);
                         entries.accept(ModBlocks.KEHRIBAR_PLANKS);
                         entries.accept(ModBlocks.KEHRIBAR_STAIRS);
                         entries.accept(ModBlocks.KEHRIBAR_SLAB);

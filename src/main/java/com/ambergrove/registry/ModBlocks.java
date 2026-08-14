@@ -88,6 +88,9 @@ public class ModBlocks {
     public static final Block KIZIL_LEAVES = registerBlock("kizil_leaves",
             new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, props("kizil_leaves", Blocks.OAK_LEAVES)));
 
+    public static final Block KEHRIBAR_SAPLING = registerBlock("kehribar_sapling",
+            new net.minecraft.world.level.block.SaplingBlock(ModTreeGrowers.KEHRIBAR, props("kehribar_sapling", Blocks.OAK_SAPLING)));
+
     public static final Block KEHRIBAR_WALL_HANGING_SIGN = registerBlockWithoutItem("kehribar_wall_hanging_sign",
             new WallHangingSignBlock(ModWoodTypes.KEHRIBAR_WOOD_TYPE, props("kehribar_wall_hanging_sign", Blocks.OAK_WALL_HANGING_SIGN)));
 
