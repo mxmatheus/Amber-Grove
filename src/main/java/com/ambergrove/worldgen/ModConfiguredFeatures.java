@@ -58,7 +58,7 @@ public class ModConfiguredFeatures {
                 new CherryFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.25F, 0.166F, 0.333F),
                 new TwoLayersFeatureSize(1, 0, 1),
                 BlockStateProvider.simple(Blocks.DIRT)
-        ).build();
+        ).belowTrunkProvider(BlockStateProvider.simple(ModBlocks.KEHRIBAR_LOG)).build();
 
         TreeConfiguration largeTreeConfig = new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.KEHRIBAR_LOG),
@@ -67,7 +67,7 @@ public class ModConfiguredFeatures {
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.3F, 0.3F, 0.2F, 0.4F),
                 new TwoLayersFeatureSize(2, 0, 2),
                 BlockStateProvider.simple(Blocks.DIRT)
-        ).build();
+        ).belowTrunkProvider(BlockStateProvider.simple(ModBlocks.KEHRIBAR_LOG)).build();
 
         context.register(KEHRIBAR_TREE, new ConfiguredFeature<>(Feature.TREE, normalTreeConfig));
         context.register(KEHRIBAR_TREE_LARGE, new ConfiguredFeature<>(Feature.TREE, largeTreeConfig));
