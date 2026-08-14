@@ -12,7 +12,7 @@ public class AmberLeavesBlock extends LeavesBlock {
     private final ParticleOptions particle;
 
     public AmberLeavesBlock(ParticleOptions particle, Properties properties) {
-        super(0.3F, properties);
+        super(0.1F, properties);
         this.particle = particle;
     }
 
@@ -23,13 +23,15 @@ public class AmberLeavesBlock extends LeavesBlock {
 
     @Override
     protected void spawnFallingLeavesParticle(Level level, BlockPos pos, RandomSource random) {
-        if (particle != null) {
-            for (int i = 0; i < 3; i++) {
-                double x = pos.getX() + random.nextDouble();
-                double y = pos.getY() - 0.05D;
-                double z = pos.getZ() + random.nextDouble();
-                level.addParticle(particle, x, y, z, 0.0D, -0.05D, 0.0D);
-            }
+        if (particle != null && random.nextInt(6) == 0) {
+            double x = pos.getX() + random.nextDouble();
+            double y = pos.getY() - 0.05D;
+            double z = pos.getZ() + random.nextDouble();
+            // Floating autumn breeze motion: gentle slow fall + wide horizontal wind drift
+            double vx = (random.nextDouble() - 0.5D) * 0.08D;
+            double vy = -0.01D - random.nextDouble() * 0.01D;
+            double vz = (random.nextDouble() - 0.5D) * 0.08D;
+            level.addParticle(particle, x, y, z, vx, vy, vz);
         }
     }
 }
